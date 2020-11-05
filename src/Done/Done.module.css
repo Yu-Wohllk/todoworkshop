@@ -1,0 +1,12 @@
+.Done {
+  width: 45%;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Done span {
+  margin-top: 5px
+}
