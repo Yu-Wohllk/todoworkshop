@@ -1,10 +1,12 @@
-import './App.css';
-import InputComponent from '../InputComponent/InputComponent';
+import "./App.css";
+import InputComponent from "../InputComponent/InputComponent";
+import ButtonComponent from "../ButtonComponent/ButtonComponent";
 
 function App() {
   return (
     <div className="App">
-        <InputComponent/>
+      <InputComponent />
+      <ButtonComponent color={'red'}/>
     </div>
   );
 }

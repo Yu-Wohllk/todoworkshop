@@ -1,0 +1,14 @@
+.redButton {
+  background-color: red;
+}
+.greenButton {
+  background-color: #4caf50;
+}
+.button {
+  color: white;
+  padding: 10px 16px;
+  margin: 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+}
