@@ -1,12 +1,28 @@
-.Done {
+.DoneContainer {
   width: 45%;
   padding: 30px;
+  margin-right: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  margin-top: 10px;
+}
+
+.DoneContainer h1 {
+  margin-top: 0;
+}
+
+.DoneList {
   display: flex;
   justify-content: space-between;
 }
 
-.Done span {
+.DoneList span {
   margin-top: 5px
+}
+
+@media only screen and (max-width: 1305px) {
+  .Done {
+    width: 100%;
+    margin-right: 0;
+  }
 }

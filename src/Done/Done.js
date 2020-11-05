@@ -1,13 +1,17 @@
 import React from "react";
+import Checkbox from "../Checkbox/Checkbox";
 import cssClasses from "./Done.module.css";
 
 const Done = () => {
   return (
     <>
-      <div className={cssClasses.Done}>
-        <input type="checkbox" />
-        <span>Elemento Todo</span>
-        <button>Eliminar</button>
+      <div className={cssClasses.DoneContainer}>
+        <h1>Done</h1>
+        <div className={cssClasses.DoneList}>
+          <Checkbox />
+          <span>Elemento Todo</span>
+          <button>Eliminar</button>
+        </div>
       </div>
     </>
   );
