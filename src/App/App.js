@@ -1,6 +1,6 @@
 import "./App.css";
 import InputComponent from "../InputComponent/InputComponent";
-import ButtonComponent from "../ButtonComponent/ButtonComponent";
+import Button from "../Button/Button";
 import Todo from '../Todo/Todo';
 import Done from '../Done/Done';
 
@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <div>
       <InputComponent />
-      <ButtonComponent color={'success'}/>
+      <Button color={'success'}>Press me</Button>
       </div>
       <div className="TodoDoneContainer">
         <Todo />

@@ -1,5 +1,6 @@
 import React from "react";
 import cssClasses from "./Done.module.css";
+import Button from '../Button/Button'
 
 const Done = () => {
   return (
@@ -7,7 +8,7 @@ const Done = () => {
       <div className={cssClasses.Done}>
         <input type="checkbox" />
         <span>Elemento Todo</span>
-        <button>Eliminar</button>
+        <Button type={'danger'}>Eliminar</Button>
       </div>
     </>
   );
