@@ -1,6 +1,7 @@
 import React from "react";
 import Checkbox from "../Checkbox/Checkbox";
 import cssClasses from "./Todo.module.css";
+import Button from '../Button/Button'
 
 const Todo = () => {
   return (
@@ -10,7 +11,7 @@ const Todo = () => {
         <div className={cssClasses.TodoList}>
           <Checkbox />
           <span>Elemento Todo</span>
-          <button>Eliminar</button>
+          <Button type={'danger'}>Eliminar</Button>
         </div>
       </div>
     </>
