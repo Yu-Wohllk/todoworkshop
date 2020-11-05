@@ -1,9 +1,10 @@
 import React from "react";
+import './inputComponent.css';
 
 const InputComponent = () => (
     <div>
         <input></input>
-        <button>Press me</button>
+        <button className="button">Press me</button>
     </div>
 );
 
