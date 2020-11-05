@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <InputComponent />
-      <ButtonComponent color={'red'}/>
+      <ButtonComponent type={'success'}/>
     </div>
   );
 }
