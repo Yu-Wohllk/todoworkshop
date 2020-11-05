@@ -9,16 +9,12 @@ function App() {
     <div className="App">
       <div>
       <InputComponent />
-<<<<<<< HEAD
-      <ButtonComponent type={'success'}/>
-=======
-      <ButtonComponent color={'red'}/>
+      <ButtonComponent color={'success'}/>
       </div>
       <div className="TodoDoneContainer">
         <Todo />
         <Done />
       </div>
->>>>>>> 2a8a28ccfc4e744da18f6ce9ef43436131c78070
     </div>
   );
 }
