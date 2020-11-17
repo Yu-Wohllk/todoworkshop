@@ -43,7 +43,7 @@ function App() {
         <Button color={"success"}>Press me</Button>
       </div>
       <div className="TodoDoneContainer">
-        <Todo />
+        <Todo list={todoList}/>
         <Done />
       </div>
     </div>

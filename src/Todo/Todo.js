@@ -2,12 +2,14 @@ import React from "react";
 import cssClasses from "./Todo.module.css";
 import TodoElement from "../TodoElement/TodoElement";
 
-const Todo = () => {
+const Todo = (props) => {
   return (
     <>
       <div className={cssClasses.TodoContainer}>
         <h1>Todos</h1>
-        <TodoElement todoListCss={cssClasses.TodoList}/>
+        {props.list.map((todo) => (
+          <TodoElement label={todo.label} todoListCss={cssClasses.TodoList} />
+        ))}
       </div>
     </>
   );
