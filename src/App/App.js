@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <div>
       <InputComponent />
-      <Button color={'success'}>Press me</Button>
+      <Button color={'success'}>Guardar</Button>
       </div>
       <div className="TodoDoneContainer">
         <Todo />
