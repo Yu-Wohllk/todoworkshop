@@ -33,6 +33,9 @@ function App() {
     },
   ];
 
+  const todoList = todos.filter((todo) => todo.status === 'todo');
+  const doneList = todos.filter((todo) => todo.status === 'done');
+
   return (
     <div className="App">
       <div>

@@ -1,18 +1,13 @@
 import React from "react";
-import Checkbox from "../Checkbox/Checkbox";
 import cssClasses from "./Todo.module.css";
-import Button from '../Button/Button'
+import TodoElement from "../TodoElement/TodoElement";
 
 const Todo = () => {
   return (
     <>
       <div className={cssClasses.TodoContainer}>
         <h1>Todos</h1>
-        <div className={cssClasses.TodoList}>
-          <Checkbox />
-          <span>Elemento Todo</span>
-          <Button type={'danger'}>Eliminar</Button>
-        </div>
+        <TodoElement todoListCss={cssClasses.TodoList}/>
       </div>
     </>
   );
