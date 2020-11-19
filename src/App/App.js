@@ -39,7 +39,7 @@ function App() {
     <div className="App">
       <div>
         <InputComponent />
-        <Button>Press me</Button>
+        <Button>Agregar</Button>
       </div>
       <div className="TodoDoneContainer">
         <TodoContainer taskList={todoList}>Todos</TodoContainer>
