@@ -3,9 +3,9 @@ import Checkbox from "../Checkbox/Checkbox";
 import Button from '../Button/Button'
 
 const TodoElement = (props) => (
-  <div className={props.todoListCss}>
+  <div className={props.todoElementCss}>
     <Checkbox />
-    <span>Elemento Todo</span>
+    <span>{props.children}</span>
     <Button type={"danger"}>Eliminar</Button>
   </div>
 );

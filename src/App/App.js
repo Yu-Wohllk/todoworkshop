@@ -40,11 +40,11 @@ function App() {
     <div className="App">
       <div>
         <InputComponent />
-        <Button color={"success"}>Press me</Button>
+        <Button>Press me</Button>
       </div>
       <div className="TodoDoneContainer">
-        <Todo list={todoList}/>
-        <Done />
+        <Todo todoList={todoList}/>
+        <Done doneList={doneList} />
       </div>
     </div>
   );

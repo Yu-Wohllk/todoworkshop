@@ -7,8 +7,8 @@ const Todo = (props) => {
     <>
       <div className={cssClasses.TodoContainer}>
         <h1>Todos</h1>
-        {props.list.map((todo) => (
-          <TodoElement label={todo.label} todoListCss={cssClasses.TodoList} />
+        {props.todoList.map((todoElement) => (
+          <TodoElement todoElementCss={cssClasses.TodoList}>{todoElement.label}</TodoElement>
         ))}
       </div>
     </>

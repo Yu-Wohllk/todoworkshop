@@ -1,18 +1,20 @@
 import React from "react";
-import Checkbox from "../Checkbox/Checkbox";
 import cssClasses from "./Done.module.css";
-import Button from "../Button/Button";
+import TodoElement from "../TodoElement/TodoElement";
 
-const Done = () => {
+const Done = (props) => {
   return (
     <>
       <div className={cssClasses.DoneContainer}>
         <h1>Done</h1>
-        <div className={cssClasses.DoneList}>
-          <Checkbox />
-          <span>Elemento Todo</span>
-          <Button type={"danger"}>Eliminar</Button>
-        </div>
+        {props.doneList.map((doneElement) => (
+          <TodoElement
+            key={doneElement.id}
+            todoElementCss={cssClasses.DoneList}
+          >
+            {doneElement.label}
+          </TodoElement>
+        ))}
       </div>
     </>
   );
