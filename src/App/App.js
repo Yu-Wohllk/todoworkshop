@@ -1,8 +1,7 @@
 import "./App.css";
 import InputComponent from "../InputComponent/InputComponent";
 import Button from "../Button/Button";
-import Todo from "../Todo/Todo";
-import Done from "../Done/Done";
+import TodoContainer from "../TodoContainer/TasksContainer";
 
 function App() {
   const todos = [
@@ -43,8 +42,8 @@ function App() {
         <Button>Press me</Button>
       </div>
       <div className="TodoDoneContainer">
-        <Todo todoList={todoList}/>
-        <Done doneList={doneList} />
+        <TodoContainer taskList={todoList}>Todos</TodoContainer>
+        <TodoContainer taskList={doneList}>Done</TodoContainer>
       </div>
     </div>
   );
