@@ -1,45 +1,42 @@
+import React, { useState } from "react";
 import "./App.css";
 import InputComponent from "../InputComponent/InputComponent";
 import Button from "../Button/Button";
 import TodoContainer from "../TodoContainer/TasksContainer";
 
 function App() {
-  const todos = [
-    {
-      id: 1,
-      status: "todo",
-      label: "Comprar Lechuga",
-    },
-    {
-      id: 2,
-      status: "todo",
-      label: "Comprar Tomates",
-    },
-    {
-      id: 3,
-      status: "done",
-      label: "Estudiar Front",
-    },
-    {
-      id: 4,
-      status: "done",
-      label: "Estudiar Android",
-    },
-    {
-      id: 5,
-      status: "done",
-      label: "Ir a Trotar",
-    },
-  ];
+  const [todoText, setTodoText] = useState("");
+  const [todos, setTodos] = useState([]);
 
-  const todoList = todos.filter((todo) => todo.status === 'todo');
-  const doneList = todos.filter((todo) => todo.status === 'done');
+  const onChangeTodoTextHandler = (e) => {
+    setTodoText(e.target.value);
+  };
+
+  const onClickTodoHandler = (e) => {
+    e.preventDefault();
+
+    const newTodo = {
+      id: Date.now(),
+      label: todoText,
+      status: "todo",
+    };
+
+    const todosArr = [...todos, newTodo];
+    console.log(todosArr);
+    setTodos([...todos, newTodo]);
+    setTodoText("");
+  };
+
+  const todoList = todos.filter((todo) => todo.status === "todo");
+  const doneList = todos.filter((todo) => todo.status === "done");
 
   return (
     <div className="App">
       <div>
-        <InputComponent />
-        <Button>Agregar</Button>
+        <form>
+          <InputComponent onChange={onChangeTodoTextHandler} value={todoText} />
+          <Button onClick={onClickTodoHandler}>Agregar</Button>
+        </form>
       </div>
       <div className="TodoDoneContainer">
         <TodoContainer taskList={todoList}>Todos</TodoContainer>

@@ -8,7 +8,7 @@ const Button = (props) => {
         danger: cssClasses.concat('redButton'),
         success: cssClasses.concat('greenButton')
     }
-    return types[props.type] ? <button className={`${types[props.type].join(" ")}`}>{props.children}</button> : null;
+    return types[props.type] ? <button onClick={props.onClick} className={`${types[props.type].join(" ")}`}>{props.children}</button> : null;
 };
 
 Button.defaultProps = {

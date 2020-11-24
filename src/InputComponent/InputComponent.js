@@ -1,6 +1,6 @@
 import React from "react";
 import "./inputComponent.css";
 
-const InputComponent = () => <input></input>;
+const InputComponent = (props) => <input onChange={props.onChange} value={props.value}></input>;
 
 export default InputComponent;
